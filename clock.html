@@ -23,11 +23,26 @@
             text-align: center;
             font-size: 32px;
         }
+        footer{
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: rgb(78, 93, 108);
+            color: #e0dfdc;
+            text-align: left;
+            font-size: 1.5em;
+        }
+        a {
+            color: #e0dfdc;
+        }
     </style>
 </head>
 <body id="fs">
-    <div id="demotext"><h1 id="clock">CTIME</h1></div>
-    <div id="demotext"><p id="tz">TIMEZONE</p></div>
+
+    <div id="demotext"><h1 id="clock">hey, if you see this, please enable js!</h1></div>
+    <div id="demotext"><p id="tz">for this to work, if it is, then i believe, somethings messed up.  srry. not me. prob.</p></div>
+
     <script>
         function updateClock() {
             var now = new Date();
@@ -37,9 +52,11 @@
             var timeString = hours + ":" + minutes + ":" + seconds;
             document.getElementById("clock").innerText = timeString;
             document.getElementById("tz").innerText=Intl.DateTimeFormat().resolvedOptions().timeZone;
+            document.title=timeString
         }
         setInterval(updateClock, 1000);
         updateClock();
     </script>
+
 </body>
 </html>
