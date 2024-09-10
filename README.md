@@ -1,6 +1,6 @@
 # flask-clock
-Clock, made with flask, help...
-
+This is a clock, I spent an hour of my time working on. It was so worth it. It turned out so much better than I had envisioned!
+It's definitely an oooh, I wanna look. type of thing, and the flask, well, it's not needed, use ``clock.html``. Thats essentially the whole code.
 ## installation?
 I can only think you want to install this, to add, to a Raspberry Pi or smth, but anyway:
 ```sh
